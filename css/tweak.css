@@ -1,0 +1,40 @@
+
+.bigName {
+    font-size: 100px;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+.newnav {
+    background-color: white;
+}
+
+.round{
+    border-radius: 100%;
+    width:200%;
+    height: 200%;
+    overflow: hidden;
+    max-width: none;
+    min-width: 30%;
+}
+
+/*object fit- removes stretch in pic*/
+.fitpic {
+  width: 360px;
+  object-fit: cover;
+}
+
+.myH {
+    color: #111; font-family: 'Open Sans', sans-serif; font-size: 40px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: left; 
+}
+
+.myHfont {
+    font-size: inherit;
+}
+
+.mydiv {
+    width: 400px;
+    border-top: 5px solid #f8f8f8;
+}
+
+
