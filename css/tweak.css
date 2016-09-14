@@ -3,10 +3,41 @@
     font-size: 40px;
     color: #000;
     font-family: 'Questrial', sans-serif;
+    margin-left: 200px;
 }
 
 .newnav {
     background-color: white;
+}
+
+.bottomTitle{
+    color: #ccff00;
+    font-size: 100px;
+}
+
+.downLink{
+    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.downText{
+    padding-top: 2em;
+    margin-top: 13em;
+}
+
+.shortSep{
+    border: none;
+    height: 1px;
+    width: 20em;
+    /* Set the hr color */
+    color: darkgray; /* old IE */
+    background-color: darkgray; /* Modern Browsers */
+}
+
+.downText2{
+    padding-top: 2em;
+    margin-top: 5em;
 }
 
 .round{
@@ -16,6 +47,16 @@
     overflow: hidden;
     max-width: none;
     min-width: 30%;
+}
+
+.lastResort{
+    border-radius: 100%;
+    width:200%;
+    height: 200%;
+    overflow: hidden;
+    max-width: none;
+    min-width: 30%;
+    margin-top: -230px;
 }
 
 /*object fit- removes stretch in pic*/
@@ -37,14 +78,39 @@
     border-top: 5px solid #f8f8f8;
 }
 
+.titleSec{
+    color: #ccff00;
+    font-size: 90px;
+    font-family: times new roman;
+    text-transform: capitalize;
+    line-height: 60px;
+    padding-top: 400px;
+    margin-right: 400px;
+    padding-bottom: 500px;
+}
+
+.titleSec2{
+    color: #ccff00;
+    font-size: 90px;
+    font-family: times new roman;
+    text-transform: capitalize;
+    line-height: 60px;
+    padding-left: 3em;
+    float: right;
+    text-align: right;
+    z-index:1000;
+}
+
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+    /* For mobile phones intro header hello: */
     h1 
      {
         font-size:90px;
          color: #ccff00;
          text-align: left;
     }
+}
+
 [class*="col-"] {
     width: 100%;
 }
@@ -68,10 +134,108 @@
     .col-m-12 {width: 100%;}
 }
 
+.smallImg{
+    height: 20vw;
+    width: 1vw;
+}
 
 .socialB {
     word-wrap: break-word;
     line-height: 10px;
 }
     
+.centerBio{
+        align-content: center;
+        background-color: white;
+}
 
+.contentBio {
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+    
+.blockQuote {
+    text-align: center;
+    font-size: 30px;
+    background-color: #808080;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px)
+    .columnTwo{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1em; /* Firefox */
+    column-rule-width: 1em;
+    margin-right: 900em;
+    padding-right: -900em;
+    padding-left: 900em;
+    margin-left: 900em;
+}
+
+
+/*mobile column 2 interests*/
+@media only screen and (max-width: 768px) {
+    .columnTwo{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1em; /* Firefox */
+    column-rule-width: 1em;
+    margin-right: 4em;
+    padding-left:-30em;
+    }
+}
+/*tablet column 2 interests*/
+@media only screen and (min-width: 600px) {
+    .columnTwo{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1em; /* Firefox */
+    column-rule-width: 1em;
+    margin-right: 15em;
+    padding-left:-30em;
+    }
+}
+
+.bqstart {
+     float: left;
+     margin-top: -70px;
+     font-size: 700%;
+     color: #ccff00;
+ }
+
+ .bqend {
+     float: right;
+     font-size: 700%;
+     color: #ccff00;
+ }
+
+
+/*columns for desktop*/
+    #right
+    {
+        margin-left: 0px;
+        margin-right: -40px;
+        float: left;
+        /* Change this to whatever the width of your left column is*/
+    }
+
+    .clear
+    {
+      clear: both;
+    }
+/*SPACING ISSUES: 
+TABLET VERSION OF HEADER HELLO 
+INTERESTS DESKTOP COLUMNS
+RECOMMENDATION LETTERS*/
