@@ -80,8 +80,8 @@
 
 .titleSec{
     color: #ccff00;
-    font-size: 90px;
-    letter-spacing: -5;
+    font-size: 120px;
+    letter-spacing: -.5vw;
     text-transform: capitalize;
     line-height: 60px;
     padding-top: 400px;
@@ -91,10 +91,11 @@
 
 .titleSec2{
     color: #ccff00;
-    font-size: 90px;
-    font-family: times new roman;
+    font-size: 120px;
     text-transform: capitalize;
-    line-height: 60px;
+    letter-spacing: -.5vw;
+    word-break: normal;
+    line-height: 95px;
     padding-left: 3em;
     float: right;
     text-align: right;
