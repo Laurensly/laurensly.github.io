@@ -102,6 +102,7 @@
     z-index:1000;
 }
 
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones intro header hello: */
     h1 
