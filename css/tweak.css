@@ -356,7 +356,6 @@
 
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones intro header hello: */
     h1 
      {
         font-size:90px;
@@ -476,8 +475,13 @@ span.highlight {
 
 
 
-/*mobile column 2 interests*/
-@media only screen and (max-width: 768px) {
+/*tablet column 2 interests*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
     .columnTwo{
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -488,7 +492,6 @@ span.highlight {
     margin-right: 4em;
     padding-left:-30em;
     }
-    
 .section-C .subhead2 {
     margin-top: 50px;
     font-size: 23px;
@@ -496,7 +499,6 @@ span.highlight {
     font-weight: 100;
     height: 100%;
 }
-
 .dropdown-menu{
     color: white;
     background-color: black;
@@ -505,9 +507,7 @@ span.highlight {
     padding: 0px;
     position: relative;
     width: 90%;
-
 }
-
 .alldropdowns{
     float: right;
     text-align: right;
@@ -534,17 +534,17 @@ span.highlight {
 }
     
     .hello{
-        font-size: 40px;
+        font-size: 90px;
     }
     .section-A .hello{
-        font-size: 40px;
+        font-size: 90px;
         letter-spacing: -1px;
     }
     .section-A {
-        height: 60%;
+        height: 65%;
     }
     .section-B .hello{
-        font-size: 40px;
+        font-size: 90px;
         letter-spacing: -1px;
         margin-left: 3%;
     }
@@ -559,7 +559,7 @@ span.highlight {
     }
     
     .section-B {
-        height: 60%;
+        height: 65%;
     }
     
     .section-C .newcol{
@@ -571,7 +571,7 @@ span.highlight {
     }
     .section-C .hello {
         padding-top: 50px;
-        font-size: 40px;
+        font-size: 90px;
         letter-spacing: -1px;
         margin-left: 3%;
     }
@@ -595,6 +595,189 @@ span.highlight {
            position: relative !important;
     }
 }
+
+/*mobile column 2 interests*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .columnTwo{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1em; /* Firefox */
+    column-rule-width: 1em;
+    margin-right: 4em;
+    padding-left:-30em;
+    }
+    
+.dropdown-menu{
+    padding-top: :30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-left: 10%;
+    padding: 0px;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+}
+
+.newnav {
+    background-color: black;
+    border-color: transparent;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+      
+.mobilelinknav{
+    color: white;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.alldropdowns{
+    float: right;
+    text-align: right;
+    width: 90%;
+    position: absolute;
+    margin-top: 100px;
+}
+    
+.subhead3{
+    color: #ccff00;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.dropdown-item .subhead3{
+    color: #ccff00;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+    
+.dropdown-item {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hello{
+    font-size: 70px;
+}
+.section-A .hello{
+    font-size: 60px;
+    display: block; 
+    word-wrap: break-all; 
+    clear: both;
+    line-height: 0px;
+    letter-spacing: -2px;
+    margin-bottom: 0%;
+}
+
+.section-A {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: url(../img/banner43mobile.jpg) no-repeat center center;
+    background-size: cover;
+}
+    
+.section-A .subhead{
+    width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    margin-left: 3%;
+    margin-top: 0%;
+}
+
+      .section-A .otis li{
+          color: white;
+      }
+    
+.section-B .hello{
+    font-size: 90px;
+    letter-spacing: -1px;
+    margin-left: 3%;
+    margin-bottom: 0%;
+}
+
+.section-B .subhead{
+    width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 0%;
+}
+
+.section-B {
+    height: 120%;
+}
+
+.section-B{
+    color: #fff;
+    background: url(../img/musicbannermobile.jpg) no-repeat center left;
+    vertical-align: baseline;
+    background-size: cover;
+    position: relative;
+}
+.section-C .newcol{
+    width: 0%;
+}
+
+.section-C{
+    width: 100%;
+}
+.section-C .hello {
+    padding-top: 50px;
+    font-size: 100px;
+    letter-spacing: -1px;
+    margin-left: 3%;
+    margin-bottom: 80px;
+}
+
+.section-C .subhead{
+    width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.section-C {
+    height: 100%;
+}
+
+.section-C .alldropdowns{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 15px;
+    position: relative !important;
+}
+
+.section-C{
+    color: #fff;
+    background: url(../img/techbanner.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: right;
+}
+    
+.section-C .subhead2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+}
+
+}
+
+
 /*tablet column 2 interests*/
 @media only screen and (min-width: 600px) {
     .columnTwo{
