@@ -147,25 +147,17 @@
     color: white;
     height: 100%;
     display: block;
-    clear: both;
+    clear: left;
 }
 
-.newCol{
-    width: 50%;
-    float: left;
-    padding-right: 420px;
-    margin-top: -630px;
+.section-C .subhead2 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 100;
+    height: 100%;
 }
 
-.newCol2{
-    width: 50%;
-    float: left;
-    padding-right: 350px;
-    margin-top: -195px;
-}
-
-.section-C .subhead{
-    width:50%;
+.section-C .subhead {
     font-size: 20px;
     color: #000;
     font-weight: 100;
@@ -176,14 +168,12 @@
 .section-C .hello {
     color: #ccff00;
     font-size: 140px;
-    width: 30%;
     text-align: left;
     float: left;
     line-height: 0px;
     padding-top: 0px;
-    margin-left: 0%;
     display: block;
-    clear: both;
+    clear: right;
     letter-spacing: -4px;
 }
 
@@ -195,15 +185,58 @@
 .section-C .contentBio {
     text-align: right;
     font-size: 20px;
-    vertical-align: top;
     height: 100%;
     color: black;
     text-transform: uppercase;
     float: right;
-    margin-top: -140px;
+}
+
+.section-C .col1 {
+    width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    float: right;
 }
 
 .techlist{
+    font-size: 15px;
+    word-break: break-all;
+    display: block;
+}
+
+.dropdown-item{
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdown-menu{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 40%;
+    padding: 0px;
+    position: relative;
+    width: 30%;
+
+}
+
+.alldropdowns{
+    float: right;
+    text-align: right;
+    width: 90%;
+    position: absolute;
+}
+
+.subhead3{
+    color: #ccff00;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.dropdown-item .subhead3{
+    color: #ccff00;
+    text-transform: uppercase;
     font-size: 15px;
 }
 
@@ -211,6 +244,21 @@
 .bottomTitle{
     color: #ccff00;
     font-size: 100px;
+}
+
+.btn {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.btn .btn-default{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.btn-default:focus, .btn-default.focus{
+    border-color: transparent;
+    background-color: transparent;
 }
 
 .contact{
@@ -391,6 +439,7 @@ span.highlight {
     text-transform: uppercase;
 }
 
+
 @media only screen and (max-width: 1200px)
     .columnTwo{
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -440,6 +489,50 @@ span.highlight {
     padding-left:-30em;
     }
     
+.section-C .subhead2 {
+    margin-top: 50px;
+    font-size: 23px;
+    color: #000;
+    font-weight: 100;
+    height: 100%;
+}
+
+.dropdown-menu{
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-left: 10%;
+    padding: 0px;
+    position: relative;
+    width: 90%;
+
+}
+
+.alldropdowns{
+    float: right;
+    text-align: right;
+    width: 90%;
+    position: absolute;
+    margin-top: 100px;
+}
+    
+.subhead3{
+    color: #ccff00;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.dropdown-item .subhead3{
+    color: #ccff00;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+    
+.dropdown-item {
+    margin: 0px;
+    padding: 0px;
+}
+    
     .hello{
         font-size: 40px;
     }
@@ -448,7 +541,7 @@ span.highlight {
         letter-spacing: -1px;
     }
     .section-A {
-        height: 130%;
+        height: 60%;
     }
     .section-B .hello{
         font-size: 40px;
@@ -466,7 +559,7 @@ span.highlight {
     }
     
     .section-B {
-        height: 140%;
+        height: 60%;
     }
     
     .section-C .newcol{
@@ -477,6 +570,7 @@ span.highlight {
         width: 100%;
     }
     .section-C .hello {
+        padding-top: 50px;
         font-size: 40px;
         letter-spacing: -1px;
         margin-left: 3%;
@@ -492,7 +586,13 @@ span.highlight {
     }
     
     .section-C {
-        height: 140%;
+        height: 60%;
+    }
+    
+    .section-C .alldropdowns{
+        height: 60%;
+        margin-top: -140px;
+           position: relative !important;
     }
 }
 /*tablet column 2 interests*/
