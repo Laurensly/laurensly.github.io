@@ -6,13 +6,217 @@
     margin-left: 200px;
 }
 
-.newnav {
+.navscroll{
+    color: black;
     background-color: white;
 }
+
+.hello {
+    color: #ccff00;
+    font-size: 140px;
+    width: auto 100%;
+    height: auto;
+    padding-top: 90px;
+}
+
+.newnav {
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left; 
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    background-color: transparent;
+    border-radius: 100%;
+    border-width: 3px;
+    height: 50px;
+}
+
+.caret{
+    color: transparent;    background-color: transparent; border-color: transparent;
+}
+
+.aligntoggle{
+    vertical-align: top;
+    color: #000;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-top: -8px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    border-color: white;
+}
+
+.navbar-toggle:hover .aligntoggle{
+    vertical-align: top;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-top: -8px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: transparent;
+}
+
+.otis li {
+    list-style-type: none;
+    text-align: right;
+}
+
+.section-A{
+    height: 100%;
+    color: #fff;
+    background: url(../img/banner43.jpg) no-repeat center center;
+    background-size: cover;
+}
+.section-A .hello {
+    color: #ccff00;
+    font-size: 140px;
+    width: 100%;
+    text-align: right;
+    line-height: 0px;
+    padding-top: 0px;
+    margin-right: 7%;
+    letter-spacing: -4px;
+}
+
+.section-B .otis li {
+    list-style-type: none;
+    text-align: left;
+    color: white;
+    margin-left: -2.5%;
+}
+
+.section-B{
+    height: 100%;
+    color: #fff;
+    background: url(../img/musicbanner2.jpg) no-repeat center center;
+    vertical-align: baseline;
+    background-size: cover;
+    position: relative;
+}
+
+.section-B .hello {
+    color: #ccff00;
+    font-size: 140px;
+    width: 100%;
+    text-align: left;
+    line-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-left: 0%;
+    letter-spacing: -4px;
+}
+
+.section-B .subhead{
+    width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 1%;
+}
+
+.section-B span.highlight {
+    background-color: #ccff00;
+    /*padding-left: 30%;*/
+}
+
+.section-C{
+    height: 100%;
+    color: #fff;
+    background: url(../img/techbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.section-C .otis li {
+    list-style-type: none;
+    color: white;
+    height: 100%;
+    display: block;
+    clear: both;
+}
+
+.newCol{
+    width: 50%;
+    float: left;
+    padding-right: 420px;
+    margin-top: -630px;
+}
+
+.newCol2{
+    width: 50%;
+    float: left;
+    padding-right: 350px;
+    margin-top: -195px;
+}
+
+.section-C .subhead{
+    width:50%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    height: 100%;
+    float: right;
+}
+
+.section-C .hello {
+    color: #ccff00;
+    font-size: 140px;
+    width: 30%;
+    text-align: left;
+    float: left;
+    line-height: 0px;
+    padding-top: 0px;
+    margin-left: 0%;
+    display: block;
+    clear: both;
+    letter-spacing: -4px;
+}
+
+.section-C span.highlight {
+    background-color: #ccff00;
+    /*padding-left: 30%;*/
+}
+
+.section-C .contentBio {
+    text-align: right;
+    font-size: 20px;
+    vertical-align: top;
+    height: 100%;
+    color: black;
+    text-transform: uppercase;
+    float: right;
+    margin-top: -140px;
+}
+
+.techlist{
+    font-size: 15px;
+}
+
 
 .bottomTitle{
     color: #ccff00;
     font-size: 100px;
+}
+
+.contact{
+    text-align: center;
+    margin: 20px;
+    color: black;
 }
 
 .downLink{
@@ -144,6 +348,9 @@
 .socialB {
     word-wrap: break-word;
     line-height: 10px;
+    width: 30%;
+    text-align: left;
+    position: relative;
 }
     
 .centerBio{
@@ -152,11 +359,27 @@
 }
 
 .contentBio {
-    text-align: left;
+    text-align: right;
     font-size: 20px;
+    vertical-align: middle;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    padding: 0%;
     color: black;
-    margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+.subhead{
+    float:left; width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+}
+
+span.highlight {
+    background-color: #ccff00;
+    /*padding-left: 30%;*/
 }
     
 .blockQuote {
@@ -183,6 +406,27 @@
 }
 
 
+@media only screen and (max-height: 508px) {
+    .intro-header {
+    height: 200%;
+    text-align: center;
+    color: #fff;
+    background: url(../img/main2.jpg) no-repeat center center;
+    background-size: cover;
+    }
+    .section-A {
+        height: 200%;
+    }
+     .section-B {
+        height: 200%;
+    }
+     .section-C {
+        height: 200%;
+    }
+}
+
+
+
 /*mobile column 2 interests*/
 @media only screen and (max-width: 768px) {
     .columnTwo{
@@ -194,6 +438,61 @@
     column-rule-width: 1em;
     margin-right: 4em;
     padding-left:-30em;
+    }
+    
+    .hello{
+        font-size: 40px;
+    }
+    .section-A .hello{
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    .section-A {
+        height: 130%;
+    }
+    .section-B .hello{
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-left: 3%;
+    }
+    
+    .section-B .subhead{
+    width:100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 3%;
+    }
+    
+    .section-B {
+        height: 140%;
+    }
+    
+    .section-C .newcol{
+        width: 0%;
+    }
+    
+    .section-C{
+        width: 100%;
+    }
+    .section-C .hello {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-left: 3%;
+    }
+    
+    .section-C .subhead{
+        width:100%;
+        font-size: 20px;
+        color: #000;
+        font-weight: 100;
+        text-align: left;
+        margin-left: 3%;
+    }
+    
+    .section-C {
+        height: 140%;
     }
 }
 /*tablet column 2 interests*/
