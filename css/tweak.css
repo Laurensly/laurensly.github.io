@@ -215,10 +215,21 @@
     color: white;
     text-align: center;
     margin-left: 40%;
-    padding: 0px;
-    position: relative;
     width: 30%;
+    position: absolute;
+    left: auto;
+    right: 0;
+}
 
+.dropup-menu{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 40%;
+    width: 30%;
+    position: absolute;
+    margin-top: 1px;
+    bottom: 100%;
 }
 
 .alldropdowns{
@@ -492,28 +503,34 @@ span.highlight {
     margin-right: 4em;
     padding-left:-30em;
     }
+      
 .section-C .subhead2 {
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 23px;
     color: #000;
     font-weight: 100;
     height: 100%;
 }
+
+.section-C .dropdown-menu {
+    top: auto;
+    margin-bottom: -55px;
+}
+      
 .dropdown-menu{
     color: white;
     background-color: black;
     text-align: center;
     margin-left: 10%;
     padding: 0px;
-    position: relative;
-    width: 90%;
+    position: absolute;
+    width: 70%;
 }
 .alldropdowns{
     float: right;
     text-align: right;
-    width: 90%;
+    width: 70%;
     position: absolute;
-    margin-top: 100px;
 }
     
 .subhead3{
@@ -533,67 +550,67 @@ span.highlight {
     padding: 0px;
 }
     
-    .hello{
-        font-size: 90px;
-    }
-    .section-A .hello{
-        font-size: 90px;
-        letter-spacing: -1px;
-    }
-    .section-A {
-        height: 65%;
-    }
-    .section-B .hello{
-        font-size: 90px;
-        letter-spacing: -1px;
-        margin-left: 3%;
-    }
-    
-    .section-B .subhead{
+.hello{
+    font-size: 90px;
+}
+.section-A .hello{
+    font-size: 90px;
+    letter-spacing: -1px;
+}
+.section-A {
+    height: 65%;
+}
+.section-B .hello{
+    font-size: 90px;
+    letter-spacing: -1px;
+    margin-left: 3%;
+}
+
+.section-B .subhead{
+width:100%;
+font-size: 20px;
+color: #000;
+font-weight: 100;
+text-align: left;
+margin-left: 3%;
+}
+
+.section-B {
+    height: 65%;
+}
+
+.section-C .newcol{
+    width: 0%;
+}
+
+.section-C{
+    width: 100%;
+}
+.section-C .hello {
+    padding-top: 50px;
+    font-size: 90px;
+    letter-spacing: -1px;
+    margin-left: 3%;
+}
+
+.section-C .subhead{
     width:100%;
     font-size: 20px;
     color: #000;
     font-weight: 100;
     text-align: left;
     margin-left: 3%;
-    }
-    
-    .section-B {
-        height: 65%;
-    }
-    
-    .section-C .newcol{
-        width: 0%;
-    }
-    
-    .section-C{
-        width: 100%;
-    }
-    .section-C .hello {
-        padding-top: 50px;
-        font-size: 90px;
-        letter-spacing: -1px;
-        margin-left: 3%;
-    }
-    
-    .section-C .subhead{
-        width:100%;
-        font-size: 20px;
-        color: #000;
-        font-weight: 100;
-        text-align: left;
-        margin-left: 3%;
-    }
-    
-    .section-C {
-        height: 60%;
-    }
-    
-    .section-C .alldropdowns{
-        height: 60%;
-        margin-top: -140px;
-           position: relative !important;
-    }
+}
+
+.section-C {
+    height: 60%;
+}
+
+.section-C .alldropdowns{
+    height: 60%;
+    margin-top: -140px;
+    position: relative !important;
+}
 }
 
 /*mobile column 2 interests*/
@@ -677,7 +694,7 @@ span.highlight {
 }
 
 .section-A {
-    height: 130%;
+    height: 110%;
     width: 100%;
     color: #fff;
     background: url(../img/banner43mobile.jpg) no-repeat center center;
@@ -693,9 +710,9 @@ span.highlight {
     margin-top: 0%;
 }
 
-      .section-A .otis li{
-          color: white;
-      }
+.section-A .otis li{
+    color: white;
+}
     
 .section-B .hello{
     font-size: 90px;
@@ -715,7 +732,7 @@ span.highlight {
 }
 
 .section-B {
-    height: 150%;
+    height: 130%;
 }
 
 .section-B{
@@ -750,7 +767,7 @@ span.highlight {
 }
 
 .section-C {
-    height: 130%;
+    height: 100%;
 }
 
 .section-C .alldropdowns{
