@@ -695,6 +695,17 @@ margin-left: 3%;
     margin-right: 10px;
     text-transform: uppercase;
 }
+      
+.intro-header .hello {
+    color: #fff;
+    font-size: 80px; 
+    width: auto;
+    height: auto;
+    margin-top: 40%;
+    font-family: 'Source Code Pro', monospace;
+    /*font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;*/
+}
 
 .alldropdowns{
     float: right;
