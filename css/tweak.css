@@ -88,7 +88,6 @@
 .otis li {
     list-style-type: none;
     text-align: right;
-    font-size: 25px;
 }
 
 .section-A{
@@ -99,15 +98,12 @@
 }
 .section-A .hello {
     color: #ccff00;
-    font-size: 120px;
+    font-size: 90px;
     width: 100%;
     text-align: right;
     letter-spacing: -9px;
 }
 
-.section-A .row{
-    height: 100%;
-}
 .section-A {
     height: 120%;
 }
@@ -153,7 +149,7 @@
 
 .section-B .hello {
     color: #ccff00;
-    font-size: 140px;
+    font-size: 90px;
     letter-spacing: -4px;
     text-align: left;
     height: 100%;
@@ -190,14 +186,14 @@
 }
 
 .section-C .subhead2 {
-    font-size: 35px;
+    font-size: 25px;
     color: #000;
     font-weight: 100;
     height: 0%;
 }
 
 .section-C .subhead {
-    font-size: 20px;
+    font-size: 15px;
     color: #000;
     font-weight: 100;
     height: 100%;
@@ -212,7 +208,7 @@
 
 .section-C .hello {
     color: #ccff00;
-    font-size: 140px;
+    font-size: 90px;
     text-align: left;
     display: block;
     clear: right;
@@ -244,7 +240,7 @@
 }
 
 .techlist{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     word-wrap: break-word;
     display: block;
@@ -264,7 +260,7 @@
     background-color: black;
     color: white;
     text-align: center;
-    width: 32.8%;
+    width: 26%;
     position: absolute;
     left: auto;
     right: 0;
@@ -274,7 +270,7 @@
 
 .open > .dropdown-menu{
     overflow: scroll;
-    height: 200px;
+    height: 190px;
 }
 
 .lastdrop{
@@ -292,7 +288,7 @@
 .subhead3{
     color: #ccff00;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .dropdown-item .subhead3{
@@ -978,13 +974,17 @@ height: 100%;
 .section-A .subhead{
   padding-right: 2%;
 }
+      
+.section-B .subhead{
+  font-size: 14px;
+}
 
 .section-B .hello{
 font-size: 50px;
 letter-spacing: -1px;
 margin-left: 3%;
 margin-bottom: 0%;
-margin-left: 3%;
+margin-left: 8%;
 }
 
 .section-C .otis li {
