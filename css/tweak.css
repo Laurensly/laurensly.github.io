@@ -35,6 +35,11 @@
     font-size: 18px;
 }
 
+.newnav .dropdown-menu{
+    background-color: white;
+    color: black;
+}
+
 .navbar-default .navbar-nav > li > a{
     color: white;
 }
@@ -201,6 +206,7 @@
     font-weight: 100;
     height: 100%;
     float: right;
+    line-height: 0;
 }
 
 .section-C .row{
@@ -247,6 +253,7 @@
     word-wrap: break-word;
     display: block;
     margin: 5%;
+    line-height: 20px;
 }
 
 .dropdown-menu{
@@ -263,9 +270,10 @@
 
 .alldropdowns{
     float: right;
+    margin-right: 10%;
     text-align: right;
-    width: 90%;
-    position: absolute;
+    width: 100%;
+    position: relative;
 }
 
 .subhead3{
@@ -688,7 +696,8 @@ text-align: left;
     }
 
 .newnav {
-    background-color: black;
+    background-color: white;
+    color: black;
     border-color: transparent;
     width: 100%;
     position: fixed;
@@ -840,8 +849,8 @@ text-align: left;
     height: 100%;
     width: 100%;
     margin-top: -60px;
-    margin-right: 15px;
-    position: relative !important;
+    margin-right: 0px;
+    position: relative;
 }
 
 .section-C{
@@ -865,6 +874,7 @@ text-align: left;
 
 .section-C .subhead3 {
     font-size: 11px;
+    line-height: 0px;
 }
 
 .section-C .otis li {
@@ -890,7 +900,7 @@ text-align: left;
       
 .section-C .techlist{
       font-size: 12px;
-        line-height: 1;
+        line-height: 1.3;
 }
       
 .leftdrop {
