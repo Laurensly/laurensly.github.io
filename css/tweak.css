@@ -978,6 +978,10 @@ height: 100%;
 .section-B .subhead{
   font-size: 14px;
 }
+      
+.section-B span.highlight{
+  font-size: 18px;
+}
 
 .section-B .hello{
 font-size: 50px;
@@ -1002,6 +1006,10 @@ font-size: 15px;
 .section-C .techlist{
 font-size: 13px;
 line-height: 1.3;
+}
+      
+.section-C span.highlight{
+  font-size: 18px;
 }
       
 .section-C .dropdown-menu{
