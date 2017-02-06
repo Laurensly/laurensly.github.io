@@ -19,7 +19,7 @@
 }
 
 .intro-header .hello {
-    color: #fff;
+    color: #ccff00;
     font-size: 140px;
     margin-left: 10%;
     margin-top: 20%;
@@ -90,18 +90,91 @@
     text-align: right;
 }
 
+.intro_page a {
+    color: transparent; 
+    text-decoration: none;
+}
+
+.intro_page a:focus, a:hover {
+    color: transparent; 
+    text-decoration: none;
+}
+.intro_page a:active, a:hover {
+    outline: 0;
+}
+
+.newlink{
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+.newlink:hover{
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+a .newlink{
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+.intro_page a:focus, a:hover {
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+.intro_page a a:focus, a:hover .newlink:hover{ 
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+body.intro_page{
+overflow:hidden;
+background:url('body.png') no-repeat;
+background-size:100%;
+display:none;
+background-color: lightpink;
+}
+
+body.home{
+overflow:hidden;
+background:url('body.png') no-repeat;
+background-size:100%;
+display:none;
+background-color: none;
+}
+
+.newtitle1{
+    height: 80vh;
+    display: table-cell;
+    vertical-align: middle;
+    color: white !important;
+    font-size: 50px !important;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+.intro_page{}
+
+.newcontainer{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
 .section-A{
     height: 100%;
     color: #fff;
-    background: url(../img/banner43.jpg) no-repeat center center;
+    background: url(../img/head.jpg) no-repeat center center;
     background-size: cover;
 }
 .section-A .hello {
-    color: #ccff00;
+    color: #fff;
     font-size: 90px;
     width: 100%;
     text-align: right;
-    letter-spacing: -9px;
+    letter-spacing: -4px;
 }
 
 .section-A {
@@ -112,10 +185,11 @@
 }
 .section-C {
     height: 100% auto;
+    padding-top: 8%;
 }
 
 .section-A span.highlight {
-    background-color: #ccff00;
+    color: #ccff00;
     text-decoration: none;
     font-size: 25px;
     /*padding-left: 30%;*/
@@ -136,7 +210,7 @@
 .section-B{
     height: 100%;
     color: #fff;
-    background: url(../img/music5.jpg) no-repeat center bottom;
+    background: url(../img/main2.jpg) no-repeat center bottom;
     background-size: cover;
 }
 
@@ -145,10 +219,11 @@
     text-align: left;
     padding-left: 5%;
     margin-top: 0%;
+    padding-top: 5%;
 }
 
 .section-B .hello {
-    color: #ccff00;
+    color: #fff;
     font-size: 90px;
     letter-spacing: -4px;
     text-align: left;
@@ -158,14 +233,14 @@
 
 .section-B .subhead{
     font-size: 25px;
-    color: #000;
+    color: #ccff00;
     font-weight: 100;
     text-align: left;
     padding-left: 2%;
 }
 
 .section-B span.highlight {
-    background-color: #ccff00;
+    background-color: ;
     text-decoration: none;
     /*padding-left: 30%;*/
 }
@@ -186,15 +261,15 @@
 }
 
 .section-C .subhead2 {
-    font-size: 25px;
-    color: #000;
+    font-size: 30px;
+    color: #ccff00;
     font-weight: 100;
     height: 0%;
 }
 
 .section-C .subhead {
     font-size: 15px;
-    color: #000;
+    color: #ccff00;
     font-weight: 100;
     height: 100%;
     float: right;
@@ -207,8 +282,8 @@
 }
 
 .section-C .hello {
-    color: #ccff00;
-    font-size: 90px;
+    color: #fff;
+    font-size: 110px;
     text-align: left;
     display: block;
     clear: right;
@@ -217,7 +292,7 @@
 }
 
 .section-C span.highlight {
-    background-color: #ccff00;
+    color: #ccff00;
     /*padding-left: 30%;*/
 }
 
@@ -286,13 +361,13 @@
 }
 
 .subhead3{
-    color: #ccff00;
+    color: ;
     text-transform: uppercase;
     font-size: 18px;
 }
 
 .dropdown-item .subhead3{
-    color: #ccff00;
+    color: ;
     text-transform: uppercase;
     font-size: 15px;
     width: auto;
@@ -300,7 +375,7 @@
 
 
 .bottomTitle{
-    color: #ccff00;
+    color: ;
     font-size: 100px;
 }
 
@@ -390,7 +465,7 @@
 }
 
 .titleSec{
-    color: #ccff00;
+    color: ;
     font-size: 120px;
     letter-spacing: -.5vw;
     text-transform: capitalize;
@@ -401,7 +476,7 @@
 }
 
 .titleSec2{
-    color: #ccff00;
+    color: ;
     font-size: 120px;
     text-transform: capitalize;
     letter-spacing: -.5vw;
@@ -418,7 +493,7 @@
     h1 
      {
         font-size:90px;
-         color: #ccff00;
+         color: ;
          text-align: left;
     }
 }
@@ -484,7 +559,7 @@
 }
 
 span.highlight {
-    background-color: #ccff00;
+    background-color: ;
     text-decoration: underline;
     /*padding-left: 30%;*/
 }
@@ -515,12 +590,9 @@ span.highlight {
 
 
 @media only screen and (max-height: 508px) {
-    .intro-header {
-    height: 200%;
-    text-align: center;
-    color: #fff;
-    background: url(../img/main2.jpg) no-repeat center center;
-    background-size: cover;
+    .intro-header .hello {
+        font-size: 80px;
+        color: #ccff00;
     }
     .section-A {
         height: 200%;
@@ -592,7 +664,7 @@ span.highlight {
 }
     
 .subhead3{
-    color: #ccff00;
+    color: ;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -624,7 +696,7 @@ open > .dropdown-menu {
 
 
 .dropdown-item .subhead3{
-    color: #ccff00;
+    color: ;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -652,7 +724,6 @@ open > .dropdown-menu {
 .section-B .subhead{
 width:100%;
 font-size: 20px;
-color: #000;
 font-weight: 100;
 text-align: left;
 }
@@ -679,7 +750,6 @@ text-align: left;
 .section-C .subhead{
     width:100%;
     font-size: 20px;
-    color: #000;
     font-weight: 100;
     text-align: left;
     margin-left: 3%;
@@ -731,11 +801,12 @@ text-align: left;
 }
       
 .intro-header .hello {
-    color: #fff;
+    color: #ccff00;
     font-size: 80px; 
     width: auto;
     height: auto;
-    margin-top: 130%;
+    padding-top: 50%;
+    padding-left: 8%;
     font-family: 'Source Code Pro', monospace;
     /*font-family: 'Alegreya Sans SC', sans-serif;
     font-family: 'Julius Sans One', sans-serif;*/
@@ -750,13 +821,13 @@ text-align: left;
 }
     
 .subhead3{
-    color: #ccff00;
+    color: ;
     text-transform: uppercase;
     font-size: 15px;
 }
 
 .dropdown-item .subhead3{
-    color: #ccff00;
+    color: ;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -781,7 +852,7 @@ text-align: left;
     height: auto;
     width: 100%;
     color: #fff;
-    background: url(../img/banner43mobile.jpg) no-repeat center center;
+    background: url(../img/head.jpg) no-repeat center center;
     background-size: cover;
 }
     
@@ -817,7 +888,6 @@ text-align: left;
 .section-B .subhead{
     width:80%;
     font-size: 20px;
-    color: #000;
     font-weight: 100;
     text-align: left;
     float: left;
