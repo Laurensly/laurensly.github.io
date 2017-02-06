@@ -88,6 +88,7 @@
 .otis li {
     list-style-type: none;
     text-align: right;
+    color: white;
 }
 
 .intro_page a {
@@ -133,7 +134,7 @@ overflow:hidden;
 background:url('body.png') no-repeat;
 background-size:100%;
 display:none;
-background-color: lightpink;
+background-color: white;
 }
 
 body.home{
@@ -145,13 +146,13 @@ background-color: none;
 }
 
 .newtitle1{
-    height: 80vh;
+    height: 90vh;
     display: table-cell;
     vertical-align: middle;
-    color: white !important;
-    font-size: 50px !important;
+    color: #ccff00 !important;
+    font-size: 60px !important;
     letter-spacing: 5%;
-    text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .intro_page{}
