@@ -12,10 +12,6 @@
 
 .hello {
     font-size: 140px; 
-    width: auto 100%;
-    height: auto 100%;
-    vertical-align: middle;
-    float: left;
 }
 
 .intro-header .hello {
@@ -53,6 +49,7 @@
     border-width: 3px;
     height: 50px;
 }
+
 
 .caret{
     color: transparent;    background-color: transparent; border-color: transparent;
@@ -164,29 +161,63 @@ background-color: none;
     margin: 0%;
 }
 
+.btn-info {
+    color: #fff;
+    width: 25%;
+    margin-left: 4%;
+    text-align: center;
+    background-color: transparent;
+    border-color: #fff !important;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-info:active:hover, .btn-info.active:hover, .open > .dropdown-toggle.btn-info:hover, .btn-info:active:focus, .btn-info.active:focus, .open > .dropdown-toggle.btn-info:focus, .btn-info:active.focus, .btn-info.active.focus, .open > .dropdown-toggle.btn-info.focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-info:focus, .btn-info.focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
 .section-A{
     height: 100%;
     color: #fff;
     background: url(../img/head.jpg) no-repeat center center;
-    background-size: cover;
+    background-size:cover;
 }
 .section-A .hello {
     color: #fff;
     font-size: 90px;
-    width: 100%;
     text-align: right;
     letter-spacing: -4px;
+    padding-top: 10%;
 }
 
-.section-A {
-    height: 120%;
+.section-A .intro-message {
+    padding-top: 0% !important;
 }
-.section-B {
-    height: 120%;
+
+.section-A .main-about {
+    margin-top: 5%;
+    width: 42%;
 }
-.section-C {
-    height: 100% auto;
-    padding-top: 8%;
+
+.btn-sm{
+    margin-top: 3%;
+    color: #fff;
+    width: 10%;
+    margin-left:5%;
+    background-color: transparent;
+    border-color: #fff !important;
 }
 
 .section-A span.highlight {
@@ -198,9 +229,7 @@ background-color: none;
 
 .section-B .otis li {
     list-style-type: none;
-    text-align: left;
     color: white;
-    clear: left;
     width: 100%;
 }
 
@@ -215,29 +244,17 @@ background-color: none;
     background-size: cover;
 }
 
-.section-B .row{
-    vertical-align: middle;
-    text-align: left;
-    padding-left: 5%;
-    margin-top: 0%;
-    padding-top: 5%;
-}
-
 .section-B .hello {
     color: #fff;
     font-size: 90px;
     letter-spacing: -4px;
-    text-align: left;
     height: 100%;
-    padding-left: 2%;
 }
 
 .section-B .subhead{
     font-size: 25px;
     color: #ccff00;
     font-weight: 100;
-    text-align: left;
-    padding-left: 2%;
 }
 
 .section-B span.highlight {
@@ -247,49 +264,34 @@ background-color: none;
 }
 
 .section-C{
-    height: 100%;
-    color: #fff;
-    background: url(../img/techbanner.jpg) no-repeat center center;
+    background-color: deepskyblue;
     background-size: cover;
 }
 
 .section-C .otis li {
     list-style-type: none;
     color: white;
-    height: 100%;
-    display: block;
-    clear: left;
+    text-align: center;
 }
 
 .section-C .subhead2 {
     font-size: 30px;
     color: #ccff00;
     font-weight: 100;
-    height: 0%;
 }
 
 .section-C .subhead {
-    font-size: 15px;
+    font-size: 20px;
     color: #ccff00;
     font-weight: 100;
-    height: 100%;
-    float: right;
-    line-height: 0;
-}
-
-.section-C .row{
-    height: 100% auto;
-    width: auto;
 }
 
 .section-C .hello {
+    padding-top: 10%;
     color: #fff;
     font-size: 110px;
-    text-align: left;
-    display: block;
-    clear: right;
-    letter-spacing: -4px;
-    padding-left: 5%;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 .section-C span.highlight {
@@ -298,28 +300,15 @@ background-color: none;
 }
 
 .section-C .contentBio {
-    text-align: right;
     font-size: 20px;
-    height: 100%;
-    vertical-align: middle;
     color: black;
     text-transform: uppercase;
-    float: right;
-}
-
-.section-C .col1 {
-    width:100%;
-    font-size: 20px;
-    color: #000;
-    font-weight: 100;
-    float: right;
+    text-align: center;
 }
 
 .techlist{
     font-size: 15px;
     color: white;
-    word-wrap: break-word;
-    display: block;
 }
 
 .scroll{
@@ -362,7 +351,6 @@ background-color: none;
 }
 
 .subhead3{
-    color: ;
     text-transform: uppercase;
     font-size: 18px;
 }
@@ -388,6 +376,16 @@ background-color: none;
 .btn .btn-default{
     border-color: transparent;
     background-color: transparent;
+}
+
+.btn-primary{
+   width: 110px;
+    height: 110px;
+    padding:50px;
+    border-radius: 55px;
+    border-width:thick; 
+    border-color: deepskyblue;
+    float: right;
 }
 
 .btn-default:focus, .btn-default.focus{
@@ -490,37 +488,22 @@ background-color: none;
 }
 
 
-@media only screen and (max-width: 768px) {
-    h1 
-     {
-        font-size:90px;
-         color: ;
-         text-align: left;
+@media only screen and (max-width: 736px) { 
+    .section-A .hello{
+        font-size: 60px;
+        text-align: right;
+        letter-spacing: -.5;
+    }
+    
+    .section-A .intro-message{
+        padding-bottom: 0%;
+    }
+    
+    .section-A .btn-sm{
+        width: 20% !important;
     }
 }
 
-[class*="col-"] {
-    width: 100%;
-}
-
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-}
 
 .smallImg{
     height: 20vw;
@@ -544,10 +527,6 @@ background-color: none;
     text-align: right;
     font-size: 20px;
     vertical-align: middle;
-    height: 100%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-    padding: 0%;
     color: black;
     text-transform: uppercase;
 }
@@ -574,22 +553,7 @@ span.highlight {
     text-transform: uppercase;
 }
 
-
-@media only screen and (max-width: 1200px)
-    .columnTwo{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
-    -moz-column-rule-width: 1em; /* Firefox */
-    column-rule-width: 1em;
-    margin-right: 900em;
-    padding-right: -900em;
-    padding-left: 900em;
-    margin-left: 900em;
-}
-
-
+/*
 @media only screen and (max-height: 508px) {
     .intro-header .hello {
         font-size: 80px;
@@ -604,7 +568,7 @@ span.highlight {
      .section-C {
         height: 200%;
     }
-}
+}*/
 
 
 
@@ -626,14 +590,6 @@ span.highlight {
     padding-left:-30em;
     }
       
-.section-C .subhead2 {
-    margin-top: 50px;
-    font-size: 25px;
-    color: #000;
-    font-weight: 100;
-    height: 100%;
-}
-
 .techlist {
     font-size: 15px;
     color: white;
@@ -641,10 +597,6 @@ span.highlight {
     display: block;
     margin: 5%;
     line-height: 20px;
-}
-
-.section-C .dropdown-menu {
-    height: 180%;
 }
       
 .dropdown-menu{
@@ -673,10 +625,6 @@ span.highlight {
 .dropdown-menu {
     top: auto;
     margin-bottom: -55px;
-}
-      
-.section-C .dropdown-menu {
-    top: auto;
 }
 
 open > .dropdown-menu {
@@ -715,7 +663,7 @@ open > .dropdown-menu {
     letter-spacing: -1px;
 }
 .section-A {
-    height: 90%;
+    height: 100%;
 }
 .section-B .hello{
     font-size: 90px;
@@ -730,294 +678,86 @@ text-align: left;
 }
 
 .section-B {
-    padding-top: 10%; 
     height: 90%;
 }
 
-.section-C .newcol{
-    width: 0%;
 }
 
-.section-C{
-    width: 100%;
-}
-.section-C .hello {
-    padding-top: 50px;
-    font-size: 90px;
-    letter-spacing: -1px;
-    margin-left: 3%;
-}
-
-.section-C .subhead{
-    width:100%;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: left;
-    margin-left: 3%;
-}
-
-.section-C {
-    height: 85%;
-}
-
-.section-C .techlist{
-    font-size: 20px;
-}
-
-.section-C .alldropdowns{
-    position: relative !important;
-}
-}
-
-/*mobile column 2 interests*/
+/*iphone 5 and 6*/
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
       
-.columnTwo{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
-    -moz-column-rule-width: 1em; /* Firefox */
-    column-rule-width: 1em;
-    margin-right: 4em;
-    padding-left:-30em;
-    }
+        .section-B{
+        height: 100%;
+        }
+        .section-C{
+        height: 100%;
+        }
 
-.newnav {
-    background-color: white;
-    color: black;
-    border-color: transparent;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-}
+        .section-A span.highlight{
+          font-size: 18px;
+        }
+
+        .section-A .subhead{
+          padding-right: 2%;
+        }
+
+
+        .section-A .otis li {
+        font-size: 15px;
+        }
+
+        .section-B .otis li {
+        font-size: 12px;
+        }
       
-.mobilelinknav{
-    color: white;
-    margin-right: 30px;
-    text-transform: uppercase;
-}
-      
-.intro-header .hello {
-    color: #ccff00;
-    font-size: 80px; 
-    width: auto;
-    height: auto;
-    padding-top: 50%;
-    padding-left: 8%;
-    font-family: 'Source Code Pro', monospace;
-    /*font-family: 'Alegreya Sans SC', sans-serif;
-    font-family: 'Julius Sans One', sans-serif;*/
-}
-
-.alldropdowns{
-    float: right;
-    text-align: right;
-    width: 90%;
-    position: absolute;
-    margin-top: 100px;
-}
-    
-.subhead3{
-    color: ;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-.dropdown-item .subhead3{
-    color: ;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-    
-.dropdown-item {
-    margin: 0px;
-    padding: 0px;
-}
-
-.section-A .hello{
-    font-size: 50px;
-    display: block; 
-    word-wrap: break-word; 
-    clear: both;
-    text-align: left;
-    line-height: 60px;
-    letter-spacing: -3px;
-    margin-bottom: 5%;
-}
-
-.section-A {
-    height: auto;
-    width: 100%;
-    color: #fff;
-    background: url(../img/head.jpg) no-repeat center center;
-    background-size: cover;
-}
-    
-.section-A .subhead{
-    width:100%;
-    font-size: 20px;
-    color: #000;
-    font-weight: 100;
-    margin-left: 3%;
-    margin-top: 0%;
-}
-
-.section-A .otis li{
-    color: white;
-    font-size: 13px;
-}
-      
-      .section-B{
-          height: 100%;
+      .section-B .btn-info{
+          width: 100%;
       }
-      .section-C{
-          height: 100%;
+      
+      .section-B .btn-sm{
+          width: 20%;
       }
-    
-.section-B .hello{
-    font-size: 50px;
-    letter-spacing: -1px;
-    margin-left: 3%;
-    margin-bottom: 0%;
-    margin-left: 3%;
-}
-
-.section-B .subhead{
-    width:80%;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: left;
-    float: left;
-    margin-left: 10%;
-    padding: 0%;
-}
-
-.section-B .row{
-    vertical-align: middle;
-    text-align: left;
-    height: 100% auto;
-    margin-top: 5%;
-    padding: 0%;
-    width: 90%;
-}
       
-.section-B .otis li {
-    list-style-type: none;
-    text-align: left;
-    color: white;
-    font-size: 13px;
-    clear: left;
-    width: 100%;
-}
+      .section-B .container{
+          padding-right: 10%;
+      }
       
-.section-C .newcol{
-    width: 0%;
-}
-
-.section-C .hello {
-    padding-top: 50px;
-    font-size: 50px;
-    letter-spacing: -1px;
-    margin-bottom: 80px;
-    margin-top: -10%;
-}
-
-.section-C .subhead{
-    width:100%;
-    font-size: 20px;
-    color: #000;
-    font-weight: 100;
-    text-align: left;
-    margin-left: 3%;
-}
-   
-
-.section-C .alldropdowns{
-    height: 100%;
-    width: 100%;
-    margin-top: -60px;
-    margin-right: 0px;
-    position: relative;
-}
-
-.section-C{
-    color: #fff;
-    background: url(../img/techbanner.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: right;
-    height: 100%;
-}
+      .section-B .hello{
+          padding-top: 0%;
+          font-size: 70px;
+      }
       
-.section-C .row{
-  width: 100%;
-}
-    
-.section-C .subhead2 {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #000;
-    font-weight: 100;
-}
-
-.section-C .subhead3 {
-    font-size: 11px;
-    line-height: 0px;
-}
-
-.section-C .otis li {
-    list-style-type: none;
-    height: 100%;
-    display: block;
-    clear: left;
-    margin: 30%;
-    width: auto;
-}
+            
+      .section-C .subhead{
+          font-size: 12px;
+      }
+    .section-C .otis li{
+        font-size: 12px;
+        width: 95%;
+        text-align: center;
+      }
       
- .section-C .dropdown-menu{
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 76%;
-    position: absolute;
-    left: auto;
-    right: 0;
-    height: 250%;
-    margin-top: -18px;
-    margin-right: 10px;
-}
+     .section-C .btn-info{
+         width:80%;
+      }
       
-.section-C .techlist{
-      font-size: 12px;
-        line-height: 1.3;
-}
+      .section-C .btn-sm{
+          width: 20%;
+      }
       
-.leftdrop {
-    background-color: black;
-    color: black;
-    text-align: center;
-    width: 90%;
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    right: 0;
-}
-
-
-.dropdown-menu .leftdrop {
-    background-color: black;
-    color: black;
-    text-align: center;
-    width: 90%;
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    right: 0;
-}
-
+      .section-C .hello{
+          font-size: 80px;
+          padding-top: 0%;
+      }
+      
+      .section-C .container{
+          margin-top: 10%;
+          width: 100%;
+      }
 }
 
 
@@ -1025,102 +765,137 @@ text-align: left;
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
 
-.section-A{
-height: auto;
-padding-bottom: 20%;
-}
-.section-B{
-height: 100%;
-}
-.section-C{
-height: 100%;
-}
+      .section-A .hello{
+          padding-top: 0%;
+          font-size: 30px;
+          letter-spacing: normal;
+      }
       
-.section-A span.highlight{
-  font-size: 18px;
-}
+      .section-A .btn-info{
+          margin: 0%;
+      }
 
-.section-A .subhead{
-  padding-right: 2%;
-}
+        .section-B .subhead{
+          font-size: 14px;
+        }
+
+        .section-B span.highlight{
+          font-size: 18px;
+        }
+
+        .section-B .hello{
+        font-size: 30px;
+        }
+
+        .section-A .otis li {
+        font-size: 15px;
+        }
+
+        .section-B .otis li {
+        font-size: 15px;
+        }
+            
+      .section-C .subhead{
+          font-size: 12px;
+      }
+    .section-C .otis li{
+        font-size: 12px;
+        width: 95%;
+        text-align: center;
+      }
       
-.section-B .subhead{
-  font-size: 14px;
-}
+     .section-C .btn-info{
+         width:80%;
+      }
       
-.section-B span.highlight{
-  font-size: 18px;
-}
-
-.section-B .hello{
-font-size: 50px;
-letter-spacing: -1px;
-margin-left: 3%;
-margin-bottom: 0%;
-margin-left: 8%;
-}
-
-.section-C .otis li {
-font-size: 18px;
-}
-
-.section-A .otis li {
-font-size: 15px;
-}
-
-.section-B .otis li {
-font-size: 15px;
-}
-
-.section-C .techlist{
-font-size: 13px;
-line-height: 1.3;
-}
+      .section-C .btn-sm{
+          width: 20%;
+      }
       
-.section-C span.highlight{
-  font-size: 18px;
-}
+      .section-C .hello{
+          font-size: 80px;
+          padding-top: 0%;
+      }
       
-.section-C .dropdown-menu{
-  height: 200%;
+      .section-C .container{
+          margin-top: 5%;
+          width: 100%;
+          margin-bottom: 5%;
+      }
 }
+
+/* Landscape iphone 6 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    
+      .section-A .hello{
+          padding-top: 0%;
+          font-size: 30px;
+          letter-spacing: normal;
+      }
       
-.section-C .alldropdowns{
-  margin-top: 1px;
-}
-
-.section-C .hello {
-padding-top: 50px;
-font-size: 50px;
-letter-spacing: -1px;
-margin-bottom: 80px;
-margin-top: -10%;
-}
-
-.section-C .subhead{
-width:100%;
-font-size: 20px;
-color: #000;
-font-weight: 100;
-text-align: left;
-margin-left: 3%;
-}
-
-
-.section-C .subhead2 {
-margin-top: 20px;
-font-size: 15px;
-color: #000;
-font-weight: 100;
-}
-
-.section-C .subhead3 {
-font-size: 12px;
-}
+      .section-A .btn-info{
+          margin: 0%;
+      }
       
+      .section-A .otis li{
+          font-size: 14px;
+      }
       
+    .section-B .otis li{
+        font-size: 14px;
+        text-align: center;
+      }
+      
+      .section-B .btn-info{
+          width: 100%;
+      }
+      
+        .section-B .btn-sm{
+          width: 20%;
+      }
+      
+      .section-B .container{
+          padding-right: 10%;
+      }
+      
+       .section-B .intro-message{
+          padding: 0%;
+      }
+      
+      .section-B .hello{
+          padding-top: 0%;
+          font-size: 80px;
+      }
+      
+    .section-C .btn-info{
+         width:50%;
+      }
+      
+    .section-C .container{
+          width: 100%;
+          margin-bottom: 5%;
+      }
+      
+    .section-A .container{
+          width: 100%;
+          margin-bottom: 5%;
+      }
+      
+    .section-C .hello{
+          font-size: 80px;
+          padding-top: 0%;
+      }
+      
+    .section-C .btn-sm{
+          width: 20%;
+      }
 }
 
 /*iphone 6 plus*/
@@ -1128,75 +903,55 @@ font-size: 12px;
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+      
+    .section-A .hello{
+          padding-top: 2%;
+          font-size: 40px;
+          letter-spacing: normal;
+      }
+      
+      .section-A .btn-info{
+          margin: 2%;
+      }
 
-.section-A {
-  height: 90%;
-}
-    .section-B{
-  height: 100%;
-}
-    .section-C{
-  height: 90%;
-}
 .section-B .otis li{
   font-size: 18px;
 }
 
-.section-B .hello{
-font-size: 50px;
-letter-spacing: -1px;
-margin-left: 3%;
-margin-bottom: 0%;
-margin-left: 3%;
-}
-
-.section-C{
-padding-top: 20%;
-}
-
-.section-C .techlist{
-font-size: 15px;
-line-height: 1.3;
-}
-
-
-.section-C .hello {
-padding-top: 50px;
-font-size: 50px;
-letter-spacing: -1px;
-margin-bottom: 80px;
-margin-top: -10%;
-}
-
-.section-C .subhead{
-width:100%;
-font-size: 20px;
-color: #000;
-font-weight: 100;
-text-align: left;
-margin-left: 3%;
-}
-
-
-.section-C .subhead2 {
-margin-top: 15px;
-font-size: 20px;
-color: #000;
-font-weight: 100;
-}
-
-
-.section-C .subhead3 {
-font-size: 14px;
-}
-
-.section-C .otis li {
-font-size: 18px;
-}
-
+      .section-B .btn-info{
+          width: 100%;
+      }
+      
+      .section-B .container{
+          padding-right: 10%;
+      }
+      
+       .section-B .intro-message{
+          padding: 0%;
+      }
+      
+      .section-B .hello{
+          padding-top: 0%;
+          font-size: 80px;
+      }
+      
 .section-A .otis li {
 font-size: 18px;
 }
+      
+      .section-C .hello{
+          font-size: 80px;
+          padding-top: 0%;
+      }
+      
+      .btn-sm{
+          margin-bottom: 0% !important;
+          width: 20% !important;
+      }
+      
+    .section-C .btn-info{
+        width: 70%;
+    }
 
 }
 
