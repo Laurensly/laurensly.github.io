@@ -40,8 +40,18 @@
 </head>
 
  <body class="section-B">
+
+    <section id="video">
+        <div class="vid" id="musicvid">
+            <video controls autoplay loop showinfo="0">
+                <source class="vid" src="img/websiteBGvid.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+     
+
     
-<section id="about">
+<section id="about" class="main-about">
     <a name="about"></a>
         <div class="container col-lg-12" align="center">
             <a href="LaurenSlyman.html"><button type="button" class="btn btn-info btn-sm">Home</button></a>
@@ -103,5 +113,40 @@
             $('body').fadeIn(3000);
             });
         </script>
+     <script>
+     var vid = document.getElementById("bgvid");
+         var pauseButton = document.querySelector("#musicvid");
+
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+    }
+
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+
+    vid.addEventListener('ended', function()
+    {
+    // only functional if "loop" is removed 
+    vid.pause();
+    // to capture IE10
+    vidFade();
+    }); 
+
+
+    pauseButton.addEventListener("click", function() {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
+
+     </script>
     </body>
 </html>
