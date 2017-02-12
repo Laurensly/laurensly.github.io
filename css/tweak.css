@@ -14,11 +14,37 @@
     font-size: 140px; 
 }
 
+.intro-header .btn-info{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    color: black;
+    border-color: black !important;
+    border-width: 5px;
+}
+.intro-header .btn-info:hover{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    color: black;
+    border-color: black !important;
+    border-width: 5px;
+}
+
+.intro-header {
+    height: 100%;
+    text-align: center;
+    color: ;
+    background: url(../img/banner434.jpg) no-repeat left center;
+    background-size: cover;
+}
+
 .intro-header .hello {
     color: #ccff00;
     font-size: 140px;
     margin-left: 10%;
     margin-top: 20%;
+    padding-bottom: 30%;
     font-family: 'Source Code Pro', monospace;
     /*font-family: 'Alegreya Sans SC', sans-serif;
     font-family: 'Julius Sans One', sans-serif;*/
@@ -489,6 +515,23 @@ background-color: none;
 
 
 @media only screen and (max-width: 736px) { 
+    
+    .intro-header .hello {
+        font-size: 50px;
+        padding-top: 30%;
+        padding-right: 10%;
+        text-align: center;
+    }
+        .intro-header .btn-sm {
+        font-size: 18px;
+            width: 40%
+    }
+        .intro-header .contact {
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+    }
+    
     .section-A .hello{
         font-size: 60px;
         text-align: right;
@@ -767,7 +810,22 @@ text-align: left;
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
+      
+.intro-header .hello {
+        font-size: 50px;
+        padding-top: 0%;
+        padding-right: 10%;
+        text-align: center;
+    }
+        .intro-header .btn-sm {
+        font-size: 18px;
+            width: 20%
+    }
+        .intro-header .contact {
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+    }
       .section-A .hello{
           padding-top: 0%;
           font-size: 30px;
@@ -903,6 +961,22 @@ text-align: left;
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+      
+      .intro-header .hello {
+        font-size: 50px;
+        padding-top: 0%;
+        padding-right: 10%;
+        text-align: center;
+    }
+        .intro-header .btn-sm {
+        font-size: 18px;
+            width: 20%
+    }
+        .intro-header .contact {
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+    }
       
     .section-A .hello{
           padding-top: 2%;
