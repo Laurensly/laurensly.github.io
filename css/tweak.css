@@ -256,11 +256,22 @@ background-color: none;
 .section-B .otis li {
     list-style-type: none;
     color: white;
-    width: 100%;
+    text-align: left;
 }
 
 .section-B .contentBio{
-    width: 100%;
+    text-align: left;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+.section-B .btn-info{
+    width: 20%;
+    margin-top: 2%;
+}
+
+.section-B .btn-sm{
+    width: 10%;
 }
 
 .section-B{
@@ -275,6 +286,7 @@ background-color: none;
     font-size: 90px;
     letter-spacing: -4px;
     height: 100%;
+    padding-left: 2%;
 }
 
 .section-B .subhead{
@@ -596,24 +608,6 @@ span.highlight {
     text-transform: uppercase;
 }
 
-/*
-@media only screen and (max-height: 508px) {
-    .intro-header .hello {
-        font-size: 80px;
-        color: #ccff00;
-    }
-    .section-A {
-        height: 200%;
-    }
-     .section-B {
-        height: 200%;
-    }
-     .section-C {
-        height: 200%;
-    }
-}*/
-
-
 
 /*tablet column 2 interests*/
 /* Portrait */
@@ -733,6 +727,17 @@ text-align: left;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
       
+      .intro-header .btn-sm{
+          width: 25%;
+          text-align: center;
+      }
+      
+      .intro-header .contact{
+          font-size: 18px;     
+          margin: 3%;
+          font-weight: bold;
+      }
+      
         .section-B{
         height: 100%;
         }
@@ -754,15 +759,18 @@ text-align: left;
         }
 
         .section-B .otis li {
-        font-size: 12px;
+            font-size: 12px;
+            width: 85%;
+            margin-top: 4%;
         }
       
       .section-B .btn-info{
-          width: 100%;
+          width:85%;
       }
       
       .section-B .btn-sm{
           width: 20%;
+          margin-top: 5%;
       }
       
       .section-B .container{
@@ -811,7 +819,7 @@ text-align: left;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
       
-.intro-header .hello {
+      .intro-header .hello {
         font-size: 50px;
         padding-top: 0%;
         padding-right: 10%;
@@ -891,6 +899,14 @@ text-align: left;
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
+      
+      .intro-header .hello{
+          padding-top: 0%;
+      }
+      
+        .intro-header .btn-sm{
+          width: 15%;
+      }
     
       .section-A .hello{
           padding-top: 0%;
@@ -907,12 +923,13 @@ text-align: left;
       }
       
     .section-B .otis li{
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
+        padding-right: 10%;
       }
       
       .section-B .btn-info{
-          width: 100%;
+          width: 90%;
       }
       
         .section-B .btn-sm{
@@ -921,6 +938,7 @@ text-align: left;
       
       .section-B .container{
           padding-right: 10%;
+          overflow: hidden;
       }
       
        .section-B .intro-message{
@@ -929,7 +947,7 @@ text-align: left;
       
       .section-B .hello{
           padding-top: 0%;
-          font-size: 80px;
+          font-size: 50px;
       }
       
     .section-C .btn-info{
@@ -956,7 +974,7 @@ text-align: left;
       }
 }
 
-/*iphone 6 plus*/
+/*iphone 6 + */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -964,19 +982,25 @@ text-align: left;
       
       .intro-header .hello {
         font-size: 50px;
-        padding-top: 0%;
+        padding-top: 35%;
         padding-right: 10%;
         text-align: center;
     }
         .intro-header .btn-sm {
-        font-size: 18px;
-            width: 20%
+            font-size: 20px;
+            font-weight: bolder;
+            width: 25%;
+            margin-top: 20%;
     }
         .intro-header .contact {
             font-size: 20px;
             color: black;
             font-weight: 600;
     }
+      
+      .intro-header {
+        background-image: url(../img/banner434.jpg)
+      }
       
     .section-A .hello{
           padding-top: 2%;
@@ -987,13 +1011,24 @@ text-align: left;
       .section-A .btn-info{
           margin: 2%;
       }
+      
+      .section-A .otis li {
+    font-size: 18px;
+    }
 
-.section-B .otis li{
-  font-size: 18px;
-}
+      /*-music*/
+
+    .section-B .otis li{
+      font-size: 14px;
+        width: 90%;
+        margin-top: 5%;
+        padding-left: 0%;
+        margin-left: 0%;
+        text-align: left;
+    }
 
       .section-B .btn-info{
-          width: 100%;
+          width: 80%;
       }
       
       .section-B .container{
@@ -1009,9 +1044,6 @@ text-align: left;
           font-size: 80px;
       }
       
-.section-A .otis li {
-font-size: 18px;
-}
       
       .section-C .hello{
           font-size: 80px;
@@ -1020,7 +1052,7 @@ font-size: 18px;
       
       .btn-sm{
           margin-bottom: 0% !important;
-          width: 20% !important;
+          width: 20%;
       }
       
     .section-C .btn-info{
@@ -1029,52 +1061,25 @@ font-size: 18px;
 
 }
 
+/*iphone 6+ landscape*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
 
-/*tablet column 2 interests
-@media only screen and (min-width: 600px) {
-    .columnTwo{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera 
-    -moz-column-count: 2; /* Firefox 
-    column-count: 2;
-   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera 
-    -moz-column-rule-width: 1em; /* Firefox 
-    column-rule-width: 1em;
-    margin-right: 15em;
-    padding-left:-30em;
+    .section-B .otis li{
+      font-size: 14px;
+        width: 90%;
+        margin-top: 0%;
+        padding-left: 0%;
+        margin-left: 0%;
+        text-align: left;
     }
+      
+      .section-B .hello{
+          font-size: 50px;
+          padding-bottom: 0%;
+      }
+      
 }
-
-
-.bqstart {
-     float: left;
-     margin-top: -70px;
-     font-size: 700%;
-     color: #ccff00;
- }
-
- .bqend {
-     float: right;
-     font-size: 700%;
-     color: #ccff00;
- }
-
-*/
-
-
-/*columns for desktop*/
-    /*#right
-    {
-        margin-left: 0px;
-        margin-right: -40px;
-        float: left;
-        /* Change this to whatever the width of your left column is*/
-    }
-
-    /*.clear
-    {
-      clear: both;
-    }*/
-/*SPACING ISSUES: 
-TABLET VERSION OF HEADER HELLO 
-INTERESTS DESKTOP COLUMNS
-RECOMMENDATION LETTERS*/
