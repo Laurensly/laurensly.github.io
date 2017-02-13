@@ -293,7 +293,7 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('/website/img/websiteBGvid.jpg') no-repeat;
+    background: url('../img/websiteBGvid.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -795,7 +795,7 @@ text-align: left;
       
         .section-B{
         height: 100%;
-            background-image: url(/website/img/giphy.gif);
+            background-image: url(../img/giphy.gif);
             background-repeat: no-repeat;
             background-size: cover;
             background-position:top center;
