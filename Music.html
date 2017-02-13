@@ -25,9 +25,9 @@
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
     <link href="css/tweak.css" rel="stylesheet" type="text/css">
-    <link type="text/css" rel="stylesheet" href="../website/css/landing-page.css">
-    <link type="text/css" rel="stylesheet" href="../website/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="../website/css/tweak.css">
+    <link type="text/css" rel="stylesheet" href="css/landing-page.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/tweak.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -43,11 +43,12 @@
 
 <div class="vid">
     <button class="btn" id="vidpause"><i class="fa fa-pause" aria-hidden="true"></i></button>
-     <video poster="../website/img/websiteBGvid.jpg" id="bgvid" playsinline autoplay muted loop>
-        <source src="../website/img/websiteBGvid.webm" type="video/webm">
-        <source src="../website/img/websiteBGvid.mp4" type="video/mp4">
+     <video id="bgvid" playsinline autoplay muted loop>
+         <video id="bgvid" playsinline autoplay muted loop></video>
+        <source src="/website/img/websiteBGvid.webm" type="video/webm">
+        <source src="/website/img/websiteBGvid.mp4" type="video/mp4">
     </video>
-     </div>
+</div>
 
 <section id="about" class="main-about">
     <a name="about"></a>
@@ -112,35 +113,34 @@
         </script>
      <script>
 
-         var vid = document.getElementById("bgvid"),
-pauseButton = document.getElementById("vidpause");
-if (window.matchMedia('(prefers-reduced-motion)').matches) {
-    vid.removeAttribute("autoplay");
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-}
-         
-         function vidFade() {
-    vid.classList.add("stopfade");
-}
-vid.addEventListener('ended', function() {
-    // only functional if "loop" is removed 
-     vid.pause();
-	// to capture IE10
-	vidFade();
-});
-pauseButton.addEventListener("click", function() {
-    vid.classList.toggle("stopfade");
-	if (vid.paused) {
-vid.play();
-		pauseButton.innerHTML = "Pause";
-	} else {
-        vid.pause();
-        pauseButton.innerHTML = "Paused";
-	}
-})
+                 var vid = document.getElementById("bgvid"),
+        pauseButton = document.getElementById("vidpause");
+        if (window.matchMedia('(prefers-reduced-motion)').matches) {
+            vid.removeAttribute("autoplay");
+            vid.pause();
+            pauseButton.innerHTML = "Paused";
+        }
+
+                 function vidFade() {
+            vid.classList.add("stopfade");
+        }
+        vid.addEventListener('ended', function() {
+            // only functional if "loop" is removed 
+             vid.pause();
+            // to capture IE10
+            vidFade();
+        });
+        pauseButton.addEventListener("click", function() {
+            vid.classList.toggle("stopfade");
+            if (vid.paused) {
+        vid.play();
+                pauseButton.innerHTML = "Pause";
+            } else {
+                vid.pause();
+                pauseButton.innerHTML = "Paused";
+            }
+        })
 
      </script>
-
     </body>
 </html>
