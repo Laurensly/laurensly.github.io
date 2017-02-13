@@ -172,10 +172,11 @@ background-color: none;
     height: 90vh;
     display: table-cell;
     vertical-align: middle;
-    color: #ccff00 !important;
-    font-size: 60px !important;
+    color: #000 !important;
+    font-size: 80px !important;
     letter-spacing: 5%;
-    font-family: 'Source Code Pro', monospace;
+    font-weight: 100;
+    font-family: 'Special Elite', cursive;
 }
 
 .intro_page{}
@@ -337,12 +338,7 @@ video {
   float: right;
   font-size: 1.2rem;
 }
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-top: 0;
-  letter-spacing: .3rem;
-}
+
 #musicvid button { 
   display: block;
   width: 80%;
