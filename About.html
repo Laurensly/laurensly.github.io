@@ -39,7 +39,7 @@
     
 </head>
     
-<body class="section-A" onload="init()">
+<body class="section-A">
     
 <section id="about">
     <a name="about"></a>
@@ -54,10 +54,9 @@
                         <font><h1 class="hello">I'm &nbsp; Lauren.</h1></font> 
                     </div>  
                 </div>
-    <!--list begins-->    
-        <div class="accordionItem">
+            
             <div class="contentBio">
-              <button type="button" class="btn btn-info main-about accordionItems" data-toggle="collapse" data-target="#school" id="main-about">SCHOOL</button>
+              <button type="button" class="btn btn-info main-about" data-toggle="collapse" data-target="#school" id="main-about">SCHOOL</button>
               <div id="school" class="collapse">
                     <ul class="otis li">
                         <li>University of Florida</li>
@@ -69,8 +68,9 @@
                     </ul>
                 </div>
             </div>
+            
             <div class="contentBio">
-              <button type="button" class="btn btn-info main-about accordionItems" data-toggle="collapse" data-target="#fun" id="main-about">FUN FACTS</button>
+              <button type="button" class="btn btn-info main-about" data-toggle="collapse" data-target="#fun" id="main-about">FUN FACTS</button>
                 <div id="fun" class="collapse">
                         <ul class="otis li">
                             <li>Professional singer-songwriter</li>
@@ -79,8 +79,9 @@
                         </ul>
                     </div>
                 </div>
+            
             <div class="contentBio">
-              <button type="button" class="btn btn-info main-about accordionItems" data-toggle="collapse" data-target="#interests" >INTERESTS</button>
+              <button type="button" class="btn btn-info main-about" data-toggle="collapse" data-target="#interests" >INTERESTS</button>
               <div id="interests" class="collapse">
                     <ul class="otis li">
                         <li>tech &amp; innovation</li>
@@ -90,59 +91,17 @@
                     </ul>
                   </div>
                 </div>
-            </div> <!--end of list-->
         </div>
-    </section> 
+        </section> 
         
     
     <!--Fade In-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<script type="text/javascript">
-            var accordionItems = new Array();
-    
-       function init() {
-
-      // Grab the accordion items from the page
-      var divs = document.getElementsByTagName( 'div' );
-      for ( var i = 0; i < divs.length; i++ ) {
-        if ( divs[i].className == 'accordionItem' ) accordionItems.push( divs[i] );
-      }
-
-      // Assign onclick events to the accordion item headings
-      for ( var i = 0; i < accordionItems.length; i++ ) {
-        var button = getFirstChildWithTagName( accordionItems[i], 'button' );
-        button.onclick = toggleItem;
-      }
-
-      // Hide all accordion item bodies except the first
-      for ( var i = 1; i < accordionItems.length; i++ ) {
-        accordionItems[i].className = 'accordionItem hide';
-      }
-    }
-        
-    function toggleItem() {
-      var itemClass = this.parentNode.className;
-
-      // Hide all items
-      for ( var i = 0; i < accordionItems.length; i++ ) {
-        accordionItems[i].className = 'accordionItem hide';
-      }
-
-      // Show this item if it was previously hidden
-      if ( itemClass == 'accordionItem hide' ) {
-        this.parentNode.className = 'accordionItem';
-
-      }
-    }
-    
-   function getFirstChildWithTagName( element, tagName ) {
-      for ( var i = 0; i < element.childNodes.length; i++ ) {
-        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
-      }
-    }
-    }
-</script>
-    
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('body').fadeIn(3000);
+            });
+        </script>
     </body>
 </html>
