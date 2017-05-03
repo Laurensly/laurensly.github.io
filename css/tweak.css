@@ -777,8 +777,8 @@ video {
 }
     
 .centerBio{
-        align-content: center;
-        background-color: white;
+    align-content: center;
+    background-color: white;
 }
 
 .contentBio {
@@ -929,6 +929,22 @@ text-align: left;
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+      
+  .section-A .fa-phone{
+    font-size: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+.section-A .fa-envelope{
+    font-size: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.section-A .fa-linkedin{
+    font-size: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
       
       .intro-header .btn-sm{
           width: 25%;
