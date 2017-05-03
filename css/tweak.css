@@ -50,6 +50,32 @@
     font-family: 'Julius Sans One', sans-serif;*/
 }
 
+.panel-heading.accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family:'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content:"\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    position: relative;
+    bottom: 23px;
+    font-size: 15pt;
+    /* adjust as needed */
+    color: grey;
+    /* adjust as needed */
+}
+.panel-heading.accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\e080";
+    /* adjust as needed, taken from bootstrap.css */
+}
+.panel-heading:hover {
+    cursor: pointer;
+}
+.panel-heading:hover h4 {
+    text-decoration: underline;
+}
+
 .newnav {
     background-color: transparent;
     border-color: transparent;
@@ -173,10 +199,9 @@ background-color: none;
     display: table-cell;
     vertical-align: middle;
     color: #000 !important;
-    font-size: 50px !important;
+    font-size: 40px !important;
     letter-spacing: 5%;
     font-weight: 100;
-    font-family: 'Special Elite', cursive;
 }
 
 .intro_page{}
@@ -215,18 +240,58 @@ background-color: none;
     border-color: #fff;
 }
 
+.panel{
+    background-color: transparent;
+    border-color: transparent;
+}
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.panel-heading {
+    cursor: pointer;
+}
+
 .section-A{
     height: 100%;
-    color: #fff;
-    background: url(../img/head.jpg) no-repeat center center;
+    background: url('../img/about1.jpg') no-repeat;
     background-size:cover;
+    margin-bottom: 20%;
 }
 .section-A .hello {
     color: #fff;
     font-size: 90px;
     text-align: right;
     letter-spacing: -4px;
+    float: right;
     padding-top: 10%;
+}
+
+.section-A .contact_about{
+    color:white; 
+    float:right;
+    padding-top: 5%;
+    font-size: 40px;
+    width: 41%;
+    font-weight: 100;
+}
+
+.section-A .fa-phone{
+    margin-left: 4%;
+    margin-right: 4%;
+    color:white; 
+}
+.section-A .fa-envelope{
+    margin-left: 4%;
+    margin-right: 4%;
+    color:white; 
+}
+.section-A .fa-linkedin{
+    margin-left: 4%;
+    margin-right: 4%;
+    color:white; 
 }
 
 .section-A .intro-message {
@@ -269,6 +334,7 @@ background-color: none;
 .section-B .btn-info{
     width: 40%;
     margin-top: 2%;
+    border: white;
 }
 
 .section-B .btn-sm{
@@ -293,14 +359,10 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('../img/giphy.gif') no-repeat;
+    background: url('../img/websiteBGvid.mp4') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
-.stopfade { 
-   opacity: .5;
-}
-
 #vid { 
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100; 
@@ -325,13 +387,10 @@ video {
   cursor: pointer;
   transition: .3s background;
 }
-#vid button:hover { 
-   background: rgba(0,0,0,0.5);
-}
 
 .section-B .main-about{
     display: block;
-    z-index: 5;
+    z-index: 4;
     position: relative;
 }
 
@@ -359,7 +418,80 @@ video {
 
 .section-C{
     background-color: deepskyblue;
+}
+
+.section-C .hello {
+    color: deepskyblue;
+    font-size: 150px;
+    text-align: center;
+}
+
+.bio {
+    float: right;
     background-size: cover;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    height: 100%;
+    display: block;
+    clear: left;
+    position: relative;
+    overflow: scroll;
+}
+
+.tech-title{
+    padding-top: 12%;
+    display: block;
+    clear: right;
+    position: absolute;
+    height: 100%;
+}
+
+.panel-default > .panel-heading{
+    margin: 0;
+    box-shadow: none;
+}
+
+.panel-group .panel + .panel{
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    border-color: deepskyblue;
+    box-shadow: none;
+}
+
+.panel-group .panel-heading{
+    border: 0 !important;
+    border-color: deepskyblue;
+    color: white;
+    box-shadow: none;
+}
+
+.panel-heading{
+    border: 0 !important;
+    border-color: deepskyblue;
+    margin-bottom: 5%;
+    box-shadow: none;
+}
+
+.panel{
+    border: 0px;
+    border-color: deepskyblue;
+    border-bottom-color: deepskyblue;
+    border-width: 0px;
+    box-shadow: none;
+}
+
+.panel-default{
+    border: 0 !important;
+    border-color: deepskyblue;
+    box-shadow: none;
+}
+
+.section-C .contentBio {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .section-C .otis li {
@@ -380,24 +512,22 @@ video {
     font-weight: 100;
 }
 
-.section-C .hello {
-    padding-top: 10%;
-    color: #fff;
-    font-size: 110px;
-    text-align: center;
-    padding-bottom: 5%;
-}
 
 .section-C span.highlight {
     color: #ccff00;
     /*padding-left: 30%;*/
 }
 
-.section-C .contentBio {
-    font-size: 20px;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
+.section-C .btn-info{
+    width:70%;
+    padding: 3%;
+}
+
+.section-C .btn-sm{
+    width:10%;
+    border-color: deepskyblue !important;
+    color: deepskyblue;
+    padding: 2%;
 }
 
 .techlist{
@@ -611,6 +741,24 @@ video {
     
     .section-A .btn-sm{
         width: 20% !important;
+    }
+
+    .section-C .btn-sm{
+        border-color: white;
+        color: white;
+    }
+    
+    .section-C .btn-info{
+        font-size: 10px;
+    }
+    
+    .section-C .hello{
+        color: white;
+        font-size: 30px;
+    }
+    
+    .section-C .bio{
+        padding-top: 70%;
     }
 }
 
@@ -850,22 +998,48 @@ text-align: left;
           font-size: 12px;
       }
     .section-C .otis li{
-        font-size: 12px;
+        font-size: 15px;
         width: 95%;
-        text-align: center;
+        text-align: center;                 
+        border: 0%;
       }
       
      .section-C .btn-info{
-         width:80%;
+         width:100%;
+         color: deepskyblue;
+         font-size: 15px;
+         margin-left: 0%;
+         margin-top: 0%;
+         margin-bottom: 0%;
+         padding: 0%;
+         border-color: deepskyblue !important;
+      }
+      
+    .section-C .btn-info .panel-group .panel-heading{
+        text-align: left;
+        border-color: deepskyblue;
+        color: white;
+      }
+      
+      .section-C .panel-body{
+          background-color: deepskyblue;
+          padding-left: 0%;
+         margin-left: 0%;
+          font-size: 15px;
       }
       
       .section-C .btn-sm{
-          width: 20%;
+          width: 25%;
+          color: deepskyblue;
+          border-color: deepskyblue;
+          font-size: 18px;
+          text-align: center;
       }
       
       .section-C .hello{
           font-size: 80px;
           padding-top: 0%;
+          color: deepskyblue;
       }
       
       .section-C .container{
@@ -932,10 +1106,9 @@ text-align: left;
             background-repeat: no-repeat;
             background-color: #000;
             background-size:cover;
-            background-position:;
         }
       
-      #bgvid { 
+      #video { 
         display: none;
         }
             
@@ -1025,28 +1198,30 @@ text-align: left;
           font-size: 50px;
       }
       
-    .section-C .btn-info{
-         width:50%;
-      }
-      
-    .section-C .container{
-          width: 100%;
-          margin-bottom: 5%;
-      }
-      
     .section-A .container{
           width: 100%;
           margin-bottom: 5%;
       }
       
-    .section-C .hello{
-          font-size: 80px;
-          padding-top: 0%;
-      }
       
     .section-C .btn-sm{
-          width: 20%;
-      }
+        border-color: white !important;
+        color: white;
+        font-size: 10px !important;
+    }
+    
+    .section-C .btn-info{
+        font-size: 14px;
+    }
+    
+    .section-C .hello{
+        color: white;
+        font-size: 60px;
+    }
+    
+    .section-C .bio{
+        padding-top: 40%;
+    }
 }
 
 /*iphone 6 + */
