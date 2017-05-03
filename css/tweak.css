@@ -334,7 +334,7 @@ background-color: none;
 .section-B .btn-info{
     width: 40%;
     margin-top: 2%;
-    border: white;
+    border-color: white;
 }
 
 .section-B .btn-sm{
