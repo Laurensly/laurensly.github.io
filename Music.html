@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <style type='text/css'>
-        ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}</style>
+    <style type='text/css'>ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}</style>
 
     <title>Lauren Slyman</title>
 
@@ -45,7 +44,7 @@
     <button class="btn" id="vidpause"><i class="fa fa-pause" aria-hidden="true"></i></button>
      <video id="bgvid" playsinline autoplay muted loop>
          <video id="bgvid" playsinline autoplay muted loop></video>
-        <source src="../img/websiteBGvid.mp4" type="video/mp4">
+        <source src="./img/websiteBGvid.mp4" type="video/mp4">
     </video>
 </div>
 
@@ -65,7 +64,7 @@
                 </div>
             
             <div class="contentBio">
-              <button type="button" class="btn btn-info main-about" data-toggle="collapse" data-target="#journey" id="main-about">The Journey</button>
+              <button type="button" class="btn btn-info main-about panel-heading" data-toggle="collapse" data-target="#journey" data-parent="#accordion" id="main-about">The Journey</button>
               <div id="journey" class="collapse">
                     <ul class="otis li">
                     <li>Poetry</li>
@@ -79,7 +78,7 @@
             </div>
             
             <div class="contentBio">
-              <button type="button" class="btn btn-info main-about" data-toggle="collapse" data-target="#mile" id="main-about">Milestones</button>
+              <button type="button" class="btn btn-info main-about panel-heading" data-toggle="collapse" data-target="#mile" id="main-about" data-parent="#accordion">Milestones</button>
                 <div id="mile" class="collapse">
                         <ul class="otis li">
                     <li>First song written on guitar at age 13</li>
