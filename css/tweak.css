@@ -22,6 +22,7 @@
     border-color: black !important;
     border-width: 5px;
 }
+
 .intro-header .btn-info:hover{
     padding-top: 1%;
     padding-bottom: 1%;
@@ -43,9 +44,8 @@
     color: #ccff00;
     font-size: 140px;
     margin-left: 10%;
-    margin-top: 20%;
-    padding-bottom: 30%;
-    font-family: 'Source Code Pro', monospace;
+    margin-top: 10%;
+    padding-bottom: 10%;
     /*font-family: 'Alegreya Sans SC', sans-serif;
     font-family: 'Julius Sans One', sans-serif;*/
 }
