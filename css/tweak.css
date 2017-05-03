@@ -256,17 +256,20 @@ background-color: none;
 
 .section-A{
     height: 100%;
-    background: url('../img/about1.jpg') no-repeat;
-    background-size:cover;
+    background-color:salmon;
     margin-bottom: 20%;
 }
 .section-A .hello {
     color: #fff;
-    font-size: 90px;
-    text-align: right;
+    font-size: 140px;
+    text-align: left;
     letter-spacing: -4px;
-    float: right;
-    padding-top: 10%;
+    word-wrap: break-word;
+    display: block;
+    clear: right;
+    padding-left: 0%;
+    padding-top: 5%;
+    float: left;
 }
 
 .section-A .contact_about{
@@ -308,8 +311,13 @@ background-color: none;
     color: #fff;
     width: 10%;
     margin-left:5%;
+    margin-bottom: 8%;
     background-color: transparent;
     border-color: #fff !important;
+}
+
+.section-A .btn-sm{
+  font-size: 15px;
 }
 
 .section-A span.highlight {
@@ -339,6 +347,7 @@ background-color: none;
 
 .section-B .btn-sm{
     width: 10%;
+    margin-bottom: 0%;
 }
 
 .section-B {
@@ -401,7 +410,6 @@ video {
     height: 100%;
     padding-left: 2%;
     padding-bottom: 2%;
-    font-family: 'Source Code Pro', monospace;
 }
 
 .section-B .subhead{
