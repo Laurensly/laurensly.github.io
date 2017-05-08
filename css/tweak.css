@@ -836,11 +836,11 @@ span.highlight {
     column-rule-width: 1em;
     margin-right: 4em;
     padding-left:-30em;
-    }
+      }
       
 .techlist {
     font-size: 15px;
-    color: white;
+    color: black;
     word-wrap: break-word;
     display: block;
     margin: 5%;
@@ -908,8 +908,20 @@ open > .dropdown-menu {
 }
 .section-A .hello{
     font-size: 90px;
+    word-wrap: break-word;
     letter-spacing: -1px;
+    float: left;
+    clear: both;
+    display: block;
 }
+.section-A .col-xs-12{
+    width: 50%;
+}
+      
+      .section-A .btn-sm{
+          margin-bottom: 20%;
+      }
+      
 .section-A {
     height: 100%;
 }
@@ -928,8 +940,62 @@ text-align: left;
 .section-B {
     height: 90%;
 }
+      
+      .section-C .btn-info{
+          color: deepskyblue;
+          border-color: deepskyblue;
+          
+      }
+    
+      .section-C .panel-group{
+          margin-top: 50%; 
+          background-color: white;
+      }
+      
+      .section-C .otis li{
+          color: black!important;
+      }
+      .section-C a{
+          color: deepskyblue !important;
+      }
 
 }
+
+/*tablet column 2 interests*/
+/* landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .columnTwo{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+   -webkit-column-rule-width: 1em; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1em; /* Firefox */
+    column-rule-width: 1em;
+    margin-right: 4em;
+    padding-left:-30em;
+    }
+      
+    .section-C .btn-info{
+          color: deepskyblue;
+          border-color: deepskyblue;
+          
+      }
+    
+      .section-C .panel-group{
+          margin-top: 50%; 
+          background-color: white;
+      }
+      
+      .section-C .otis li{
+          color: black!important;
+      }
+      .section-C a{
+          color: deepskyblue !important;
+      }
 
 /*iphone 5 and 6*/
 @media only screen 
@@ -937,22 +1003,10 @@ text-align: left;
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-      
-  .section-A .fa-phone{
-    font-size: 25px;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-.section-A .fa-envelope{
-    font-size: 25px;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-.section-A .fa-linkedin{
-    font-size: 25px;
-    margin-left: 2%;
-    margin-right: 2%;
-}
+
+    .section-A .contentBio{
+          text-align: center;
+      }
       
       .intro-header .btn-sm{
           width: 25%;
@@ -964,22 +1018,6 @@ text-align: left;
           margin: 3%;
           font-weight: bold;
       }
-      
-        .section-B{
-        height: 100%;
-            background-image: url(../img/giphy.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position:top center;
-        }
-      
-      #bgvid { 
-        display: none;
-        }
-      
-        .section-C{
-        height: 100%;
-        }
 
         .section-A span.highlight{
           font-size: 18px;
@@ -992,6 +1030,46 @@ text-align: left;
 
         .section-A .otis li {
         font-size: 15px;
+        text-align: center;
+        padding-right: 10%;
+        }
+      
+      .section-A .hello{
+          font-size: 45px;
+          text-align: left;
+          letter-spacing: -1px;
+          text-align: center;
+          width: 100%;
+      }
+      
+      .section-A .contact_about{
+        font-size: 25px;
+        width: 100%;
+      }
+      
+    .section-A .fa-phone{
+        font-size: 20px;
+    }
+    .section-A .fa-envelope{
+        font-size: 20px;
+    }
+    .section-A .fa-linkedin{
+        font-size: 20px;
+    }
+        .section-B{
+            height: 100%;
+            background-image: url(../img/giphy.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:top center;
+        }
+      
+      #bgvid { 
+        display: none;
+        }
+      
+        .section-C{
+        height: 100%;
         }
 
         .section-B .otis li {
@@ -1036,6 +1114,8 @@ text-align: left;
          margin-top: 0%;
          margin-bottom: 0%;
          padding: 0%;
+         word-break: break-all;
+         height: 90%;
          border-color: deepskyblue !important;
       }
       
@@ -1070,10 +1150,28 @@ text-align: left;
           margin-top: 10%;
           width: 100%;
       }
+      
+            .section-C .btn-info{
+          color: deepskyblue;
+          border-color: deepskyblue;
+          
+      }
+    
+      .section-C .panel-group{
+          margin-top: 50%; 
+          background-color: white;
+      }
+      
+      .section-C .otis li{
+          color: black!important;
+      }
+      .section-C a{
+          color: deepskyblue !important;
+      }
 }
 
 
-/*iphone 5*/
+/*iphone 5 landscape*/
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -1095,11 +1193,27 @@ text-align: left;
             color: black;
             font-weight: 600;
     }
-      .section-A .hello{
-          padding-top: 0%;
-          font-size: 30px;
-          letter-spacing: normal;
+      
+        .section-A{
+            margin-top: 5%;
+            margin-bottom: 0%;
       }
+      .section-A .hello{
+          font-size: 80px;
+          text-align: left;
+          letter-spacing: -2px;
+          margin-top: 0%;
+      }
+      
+    .section-A .fa-phone{
+        font-size: 20px;
+    }
+    .section-A .fa-envelope{
+        font-size: 20px;
+    }
+    .section-A .fa-linkedin{
+        font-size: 20px;
+    }
       
       .section-A .btn-info{
           margin: 0%;
@@ -1179,13 +1293,31 @@ text-align: left;
         .intro-header .btn-sm{
           width: 15%;
       }
-    
+      
+      .section-A{
+            margin-top: 5%;
+            margin-bottom: 0%;
+      }
       .section-A .hello{
-          padding-top: 0%;
-          font-size: 30px;
-          letter-spacing: normal;
+          font-size: 60px;
+          text-align: left;
+          letter-spacing: -2px;
+          margin-top: 0%;
       }
       
+      .section-A .col-xs-12{
+          width: 40%;
+      }
+      
+    .section-A .fa-phone{
+        font-size: 20px;
+    }
+    .section-A .fa-envelope{
+        font-size: 20px;
+    }
+    .section-A .fa-linkedin{
+        font-size: 20px;
+    }
       .section-A .btn-info{
           margin: 0%;
       }
