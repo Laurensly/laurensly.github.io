@@ -14,6 +14,21 @@
     font-size: 140px; 
 }
 
+.intro-header .hello {
+    text-align: left;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.intro-header .sec{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
 .intro-header .btn-info{
     padding-top: 1%;
     padding-bottom: 1%;
@@ -21,6 +36,8 @@
     color: black;
     border-color: black !important;
     border-width: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .intro-header .btn-info:hover{
@@ -35,17 +52,14 @@
 .intro-header {
     height: 100%;
     text-align: center;
-    color: ;
-    background: url(../img/banner434.jpg) no-repeat left center;
-    background-size: cover;
+    background-color: white;
 }
 
 .intro-header .hello {
-    color: #ccff00;
-    font-size: 140px;
-    margin-left: 10%;
-    margin-top: 10%;
-    padding-bottom: 10%;
+    color: deepskyblue;
+    font-size: 160px;
+    margin-top: 3%;
+    padding-bottom: 3%;
     /*font-family: 'Alegreya Sans SC', sans-serif;
     font-family: 'Julius Sans One', sans-serif;*/
 }
@@ -204,6 +218,11 @@ background-color: none;
     font-weight: 100;
 }
 
+.intro-logo{
+    max-height: 70%;
+    max-width: 70%;
+}
+
 .intro_page{}
 
 .newcontainer{
@@ -343,15 +362,19 @@ background-color: none;
     width: 40%;
     margin-top: 2%;
     border-color: white;
+    margin-bottom: 2%;
+    position: fixed;
 }
 
 .section-B .btn-sm{
     width: 10%;
     margin-bottom: 0%;
+    position: relative;
 }
 
 .section-B {
     color: #fff;
+    margin-bottom: 10%;
 }
 
 #vidpause .btn-sm{
@@ -630,6 +653,7 @@ video {
     margin: 20px;
     color: black;
     font-size: 30px;
+    margin-top: 10%;
 }
 
 .downLink{
@@ -1357,10 +1381,6 @@ text-align: left;
             color: black;
             font-weight: 600;
     }
-      
-      .intro-header {
-        background-image: url(../img/banner434.jpg)
-      }
       
     .section-A .hello{
           padding-top: 2%;
