@@ -1095,66 +1095,20 @@ text-align: left;
           padding-top: 0%;
           font-size: 70px;
       }
-            
-      .section-C .subhead{
-          font-size: 12px;
-      }
-    .section-C .otis li{
-        font-size: 15px;
-        width: 95%;
-        text-align: center;                 
-        border: 0%;
-      }
       
-     .section-C .btn-info{
-         width:100%;
-         color: deepskyblue;
-         font-size: 15px;
-         margin-left: 0%;
-         margin-top: 0%;
-         margin-bottom: 0%;
-         padding: 0%;
-         word-break: break-all;
-         height: 90%;
-         border-color: deepskyblue !important;
-      }
-      
-    .section-C .btn-info .panel-group .panel-heading{
-        text-align: left;
-        border-color: deepskyblue;
-        color: white;
-      }
-      
-      .section-C .panel-body{
-          background-color: deepskyblue;
-          padding-left: 0%;
-         margin-left: 0%;
-          font-size: 15px;
-      }
-      
-      .section-C .btn-sm{
-          width: 25%;
-          color: deepskyblue;
-          border-color: deepskyblue;
-          font-size: 18px;
-          text-align: center;
-      }
-      
-      .section-C .hello{
-          font-size: 80px;
-          padding-top: 0%;
-          color: deepskyblue;
-      }
       
       .section-C .container{
           margin-top: 10%;
           width: 100%;
       }
       
+      .section-C .hello{
+          color: deepskyblue;
+      }
+      
             .section-C .btn-info{
           color: deepskyblue;
           border-color: deepskyblue;
-          
       }
     
       .section-C .panel-group{
