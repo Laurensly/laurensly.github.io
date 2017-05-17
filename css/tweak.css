@@ -743,7 +743,7 @@ video {
     z-index:1000;
 }
 
-@media only screen and (max-width: 736px) { 
+/*@media only screen and (max-width: 736px) { 
     
     .intro-header .hello {
         font-size: 50px;
@@ -793,7 +793,7 @@ video {
         padding-top: 70%;
     }
 }
-
+*/
 
 .smallImg{
     height: 20vw;
@@ -1023,10 +1023,10 @@ text-align: left;
 
 /*iphone 5 and 6*/
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)  
+    and (orientation: portrait){
 
     .section-A .contentBio{
           text-align: center;
@@ -1058,8 +1058,8 @@ text-align: left;
         padding-right: 10%;
         }
       
-      .section-A .hello{
-          font-size: 45px;
+      .section-A .hello {
+          font-size: 10px;
           text-align: left;
           letter-spacing: -1px;
           text-align: center;
