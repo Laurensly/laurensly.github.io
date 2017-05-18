@@ -796,15 +796,39 @@ span.highlight {
 @media only screen and (max-width: 736px) { 
     
     .intro-header .hello {
-        font-size: 50px;
+        font-size: 70px;
         padding-top: 30%;
-        padding-right: 10%;
         text-align: center;
+        word-wrap: break-word;
+        word-break: normal;
+        width: 100%;
+        overflow: hidden;
+        padding-left: 3%;
+        padding-bottom: 20%;
     }
-        .intro-header .btn-sm {
+    
+    .intro-header .container{
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+    }
+    
+    .intro-header .sec{
+        width: 80%;
+    }
+    
+    .intro-header .row{
+        padding: 0%;
+        margin: 0%;
+    }
+    .intro-header .btn-sm {
         font-size: 18px;
-            width: 40%
+        width: 20%;
+        margin-right: 8%;
+        margin-left: -25px;
+        align-content:  left;
     }
+    
         .intro-header .contact {
             font-size: 20px;
             color: black;
