@@ -814,18 +814,12 @@ span.highlight {
     }
     
     .intro-header .sec{
-        width: 80%;
+        width: 100%;
     }
-    
-    .intro-header .row{
-        padding: 0%;
-        margin: 0%;
-    }
+
     .intro-header .btn-sm {
         font-size: 18px;
         width: 20%;
-        margin-right: 8%;
-        margin-left: -25px;
         align-content:  left;
     }
     
