@@ -849,11 +849,12 @@ span.highlight {
     }
     
     .section-A ul{
-        padding-left: 5% !important;
+        padding-left: 0% !important;
     }
     
     .section-B .btn-sm{
         width: 20% !important;
+        text-align: center;
     }
     
     .section-B .otis li{
@@ -861,7 +862,8 @@ span.highlight {
     }
     
     .section-B .btn-info{
-        width: 100%;
+        width: 97%;
+        padding-left: 0%;
     }
 
       .section-C .container{
@@ -887,6 +889,8 @@ span.highlight {
         text-align: center;
         font-size:13px;
             width: 100%;
+            padding-left: 0%;
+            margin-left: 0%;
     }
     
     .section-C .contentBio{
