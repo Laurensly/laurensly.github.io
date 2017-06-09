@@ -17,6 +17,7 @@
 .intro-header .hello {
     text-align: left;
     width: 40%;
+    padding-left: 1%;
     align-content: center;
     align-items: center;
     align-self: center;
@@ -35,9 +36,11 @@
     font-size: 20px;
     color: black;
     border-color: black !important;
-    border-width: 5px;
+    border-width: 1px;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 10%;
+    text-transform: uppercase;
 }
 
 .intro-header .btn-info:hover{
@@ -46,7 +49,7 @@
     font-size: 20px;
     color: black;
     border-color: black !important;
-    border-width: 5px;
+    border-width: 2px;
 }
 
 .intro-header {
@@ -650,10 +653,16 @@ video {
 
 .contact{
     text-align: center;
-    margin: 20px;
     color: black;
+    width: 100%;
     font-size: 30px;
-    margin-top: 10%;
+    margin-top: 15%;
+    padding-right: 3%;
+    margin-left: 2%;
+}
+
+.contact:hover{
+    font-weight: 300;
 }
 
 .downLink{
@@ -820,7 +829,7 @@ span.highlight {
     .intro-header .btn-sm {
         font-size: 18px;
         width: 20%;
-        align-content:  left;
+        align-content: left;
     }
     
         .intro-header .contact {
