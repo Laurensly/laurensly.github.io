@@ -39,7 +39,7 @@
     border-width: 1px;
     margin-left: 2%;
     margin-right: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     text-transform: uppercase;
 }
 
@@ -659,6 +659,17 @@ video {
     margin-top: 15%;
     padding-right: 3%;
     margin-left: 2%;
+}
+
+.cont{
+    text-align: center;
+    color: black;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 8%;
+    padding-right: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
 }
 
 .contact:hover{
